@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::after, *::before, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none; }
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.text-decoration-none {
+  text-decoration: none; }
+
+.p-80 {
+  padding: 80px 0; }
+
+h3 {
+  line-height: 72px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 48px; }
+
+.banner {
+  display: block;
+  max-width: 100%;
+  height: 787px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/desktop/home-header.png); }
+  .banner .banner-text {
+    padding: 296px 0;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: right;
+    color: #650300; }
+    .banner .banner-text h2 {
+      font-size: 4rem;
+      line-height: 96px;
+      font-weight: bold; }
+    .banner .banner-text p {
+      font-size: 36px;
+      line-height: 54px; }
+    .banner .banner-text a {
+      padding: 6px 12px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #FFFFFF;
+      background-color: #AA0601; }
+      .banner .banner-text a:hover {
+        -webkit-filter: brightness(1.1);
+                filter: brightness(1.1); }
+
+.service {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #650300;
+  background-color: #FBF2F2; }
+  .service h3 {
+    margin-bottom: 32px; }
+  .service li {
+    max-width: 306px; }
+    .service li img {
+      display: block;
+      max-width: 83px;
+      margin: 0 auto;
+      margin-bottom: 24px; }
+    .service li h4 {
+      font-size: 1.5rem;
+      line-height: 36px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      text-align: center; }
+    .service li p {
+      line-height: 24px;
+      color: #000000; }
+
+.classic h4,
+.co-branding h4 {
+  color: #AA0601;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 72px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center; }
+
+.classic li {
+  max-width: 416px; }
+  .classic li img {
+    max-width: 416px;
+    margin-bottom: 8px; }
+
+.co-branding {
+  text-align: center;
+  background: url(../images/desktop/background-desktop.png); }
+  .co-branding h3 {
+    color: #FFFFFF;
+    margin-bottom: 48px; }
+  .co-branding li {
+    background-color: #FFFFFF; }
+    .co-branding li h4 {
+      padding: 8px 0; }
+    .co-branding li img {
+      max-width: 648px; }
+
+.recommend {
+  font-family: "Noto Sans TC", sans-serif; }
+  .recommend li {
+    max-width: 306px;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px; }
+    .recommend li img {
+      display: block;
+      margin: 0 auto;
+      max-width: 306px; }
+    .recommend li .content {
+      padding: 16px; }
+    .recommend li .customer {
+      margin-bottom: 48px; }
+    .recommend li p {
+      margin-bottom: 8px;
+      line-height: 24px; }
+    .recommend li span {
+      display: block;
+      font-size: 0.875rem;
+      line-height: 21px;
+      color: #707070; }
+
+.contact {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #FBF2F2; }
+  .contact .container {
+    max-width: 636px; }
+  .contact p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin-bottom: 24px; }
+  .contact .info {
+    margin-bottom: 16px; }
+    .contact .info p {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-bottom: 8px; }
+    .contact .info input {
+      height: 36px;
+      border: 1px solid #000000;
+      padding: 6px 12px;
+      margin-bottom: 16px; }
+    .contact .info textarea {
+      height: 136px;
+      resize: none;
+      padding: 6px 12px; }
+    .contact .info input,
+    .contact .info textarea {
+      width: 100%;
+      background-color: transparent; }
+    .contact .info input:focus,
+    .contact .info textarea:focus {
+      outline: none;
+      border: 2px solid #000000; }
+    .contact .info ::-webkit-input-placeholder {
+      font-family: "Roboto", sans-serif; }
+    .contact .info ::-moz-placeholder {
+      font-family: "Roboto", sans-serif; }
+    .contact .info :-ms-input-placeholder {
+      font-family: "Roboto", sans-serif; }
+    .contact .info ::-ms-input-placeholder {
+      font-family: "Roboto", sans-serif; }
+    .contact .info ::placeholder {
+      font-family: "Roboto", sans-serif; }
+  .contact .check {
+    margin-bottom: 48px; }
+    .contact .check input[type="checkbox"] {
+      width: 16px;
+      height: 16px; }
+    .contact .check p {
+      line-height: 24px; }
+  .contact .but {
+    margin: 0 auto;
+    max-width: 416px;
+    background-color: #AA0601;
+    text-align: center; }
+    .contact .but button {
+      width: 100%;
+      height: 56px;
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 24px;
+      color: #FFFFFF;
+      padding: 0;
+      border: 1px solid transparent;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer; }
+    .contact .but:hover {
+      -webkit-filter: brightness(1.1);
+              filter: brightness(1.1); }
+
+/*# sourceMappingURL=index.css.map */
