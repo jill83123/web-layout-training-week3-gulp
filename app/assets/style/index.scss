@@ -1,0 +1,265 @@
+@import 'reset';
+@import 'variable';
+@import 'utilities';
+
+h3 {
+    line-height: 72px;
+    font-family: $font-noto;
+    font-size: $font-size-h3;
+    font-weight: bold;
+    color: $primary-dark;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.banner {
+    display: block;
+    max-width: 100%;
+    height: 787px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/desktop/home-header.png);
+
+    .banner-text {
+        padding: 296px 0;
+        font-family: $font-noto;
+        text-align: right;
+        color: $primary-dark;
+
+        h2 {
+            font-size: $font-size-h2;
+            line-height: 96px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 36px;
+            line-height: 54px;
+        }
+
+        a {
+            padding: 6px 12px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: $medium;
+            color: $white;
+            background-color: $primary;
+
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+
+.service {
+    font-family: $font-noto;
+    color: $primary-dark;
+    background-color: #FBF2F2;
+
+    h3 {
+        margin-bottom: 32px;
+    }
+
+    li {
+        max-width: 306px;
+
+        img {
+            display: block;
+            max-width: 83px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        h4 {
+            font-size: $font-size-h4;
+            line-height: 36px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            line-height: 24px;
+            color: $black;
+        }
+
+    }
+}
+
+.classic h4,
+.co-branding h4 {
+    color: $primary;
+    font-size: $font-size-h3;
+    font-family: $font-roboto;
+    line-height: 72px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+
+.classic {
+    li {
+        max-width: 416px;
+
+        img {
+            max-width: 416px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.co-branding {
+    text-align: center;
+    background: url(../images/desktop/background-desktop.png);
+
+    h3 {
+        color: $white;
+        margin-bottom: 48px;
+    }
+
+    li {
+        background-color: $white;
+
+        h4 {
+            padding: 8px 0;
+        }
+
+        img {
+            max-width: 648px;
+        }
+    }
+}
+
+.recommend {
+    font-family: $font-noto;
+
+    li {
+        max-width: 306px;
+        box-shadow: 0px 2px 6px #00000029;
+        border: 1px solid #DEE2E6;
+        border-radius: 4px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 306px;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .customer {
+            margin-bottom: 48px;
+        }
+
+        p {
+            margin-bottom: 8px;
+            line-height: 24px;
+        }
+
+        span {
+            display: block;
+            font-size: $font-size-s;
+            line-height: 21px;
+            color: #707070;
+        }
+    }
+}
+
+.contact {
+    font-family: $font-noto;
+    background-color: #FBF2F2;
+
+    .container {
+        max-width: 636px;
+    }
+
+    p {
+        font-size: $font-size-m;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .info {
+        margin-bottom: 16px;
+
+        p {
+            font-size: $font-size-base;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+
+        input {
+            height: 36px;
+            border: 1px solid $black;
+            padding: 6px 12px;
+            margin-bottom: 16px;
+        }
+
+        textarea {
+            height: 136px;
+            resize: none;
+            padding: 6px 12px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background-color: transparent;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid $black;
+        }
+
+        ::placeholder {
+            font-family: $font-roboto;
+            
+        }
+    }
+
+    .check {
+        margin-bottom: 48px;
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+
+        p {
+            line-height: 24px;
+        }
+    }
+
+    .but {
+        margin: 0 auto;
+        max-width: 416px;
+        background-color: $primary;
+        text-align: center;
+
+        button {
+            width: 100%;
+            height: 56px;
+            font-family: $font-noto;
+            font-size: $font-size-base;
+            font-weight: bold;
+            line-height: 24px;
+            color: $white;
+            // 清除
+            padding: 0;
+            border: 1px solid transparent;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
