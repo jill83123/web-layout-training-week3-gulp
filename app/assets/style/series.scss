@@ -1,0 +1,155 @@
+@import 'reset';
+@import 'variable';
+@import 'utilities';
+
+.series-sort {
+
+    ul {
+        height: 96px;
+    }
+
+    li {
+        width: 33.333%;
+        border: 1px solid #DCDCDC;
+
+        a {
+            display: block;
+            font-family: $font-roboto;
+            font-size: 32px;
+            font-weight: $medium;
+            color: $black;
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+
+    .selected {
+        border-bottom: 8px solid $primary;
+    }
+}
+
+.product-banner {
+    max-height: 296px;
+
+    img {
+        display: block;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.products-list {
+    padding-top: 80px;
+
+    .series-name {
+        text-align: center;
+        margin-bottom: 32px;
+
+        h2 {
+            font-size: 42px;
+            font-family: $font-roboto;
+            font-weight: $medium;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-family: $font-roboto;
+        }
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        width: 23.333%;
+        font-size: $font-size-l;
+        margin-bottom: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        color: $black;
+    }
+
+    span {
+        color: $primary;
+        font-weight: $medium;
+    }
+
+    .color-options {
+        a {
+            display: inline-block;
+        }
+
+        .color-brown {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: #5F3E2D;
+        }
+
+        .color-brown-light {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: #B75929;
+        }
+    }
+}
+
+.sunglasses {
+    li {
+        width: 32%;
+    }
+}
+
+.pages {
+    margin-bottom: 80px;
+    height: 48px;
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        margin-right: -1px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid #555555;
+
+        a {
+            color: #555555;
+            padding: 0 16px;
+        }
+
+        &:hover {
+            background-color: #F2F2F2;
+        }
+    }
+
+    .select a {
+        color: $white;
+        background-color: $black;
+    }
+
+    .last,
+    .next {
+        li a {
+            background-color: $white;
+            padding: 0 12px;
+        }
+    }
+
+    a {
+        display: block;
+    }
+}
