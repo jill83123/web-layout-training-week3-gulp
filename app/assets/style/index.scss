@@ -9,16 +9,32 @@ h3 {
     color: $primary-dark;
     text-align: center;
     margin-bottom: 48px;
+
+    @include sm() {
+        font-size: $font-size-xl;
+    }
+
+    @include xs() {
+        font-size: $font-size-l;
+    }
 }
 
 .banner {
     display: block;
     max-width: 100%;
-    height: 787px;
+    max-height: 787px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url(../images/desktop/home-header.png);
+
+    @include tablet() {
+        background-image: url(../images/tablet/home-header.png);
+    }
+
+    @include sm() {
+        background-image: url(../images/mobile/home-header.png);
+    }
 
     .banner-text {
         padding: 296px 0;
@@ -28,25 +44,56 @@ h3 {
 
         h2 {
             font-size: $font-size-h2;
-    
+
             font-weight: bold;
         }
 
         p {
             font-size: 36px;
-    
+
         }
 
         a {
             padding: 6px 12px;
             font-size: 20px;
-    
+
             font-weight: $medium;
             color: $white;
             background-color: $primary;
 
             &:hover {
                 filter: brightness(1.1);
+            }
+        }
+    }
+
+    @include sm() {
+        max-height: 592px;
+
+        .banner-text {
+            padding: 144px 0;
+
+            h2 {
+                font-size: $font-size-xl;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: $font-size-m;
+            }
+        }
+    }
+
+    @include xs() {
+
+        .banner-text {
+
+            h2 {
+                font-size: $font-size-l;
+            }
+
+            p {
+                font-size: $font-size-base;
             }
         }
     }
@@ -73,7 +120,7 @@ h3 {
 
         h4 {
             font-size: $font-size-h4;
-    
+
             margin-bottom: 8px;
             font-weight: bold;
             text-align: center;
@@ -82,18 +129,35 @@ h3 {
         p {
             color: $black;
         }
-
     }
-}
 
-.classic h4,
-.co-branding h4 {
-    color: $primary;
-    font-size: $font-size-h3;
-    font-family: $font-roboto;
-    font-weight: 900;
-    font-style: italic;
-    text-align: center;
+    @include lg() {
+        ul {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        li {
+            max-width: 348px;
+            margin: 0 auto;
+        }
+    }
+
+    @include tablet() {
+        li {
+            max-width: 336px;
+        }
+    }
+
+    @include xs() {
+        h3 {
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-top: 32px;
+        }
+    }
 }
 
 .classic {
@@ -101,8 +165,37 @@ h3 {
         max-width: 416px;
 
         img {
-            max-width: 416px;
+            max-width: 100%;
             margin-bottom: 8px;
+        }
+    }
+
+    h4 {
+        color: $primary;
+        font-size: $font-size-h3;
+        font-family: $font-roboto;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+    }
+
+    @include lg() {
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            max-width: 336px;
+        }
+
+        h4 {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include xs() {
+        li {
+            max-width: 348px;
         }
     }
 }
@@ -116,12 +209,47 @@ h3 {
         margin-bottom: 48px;
     }
 
+    h4 {
+        color: $primary;
+        font-size: $font-size-h3;
+        font-family: $font-roboto;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
     li {
+        max-width: 648px;
         background-color: $white;
 
         img {
-            max-width: 648px;
+            max-width: 100%;
             margin-bottom: 8px;
+            object-fit: cover;
+        }
+    }
+
+    @include lg() {
+        background: url(../images/tablet/background-tablet.png);
+
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            max-width: 696px;
+            margin-top: 24px;
+        }
+
+        h3 {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include xs() {
+        img {
+            height: 240px;
         }
     }
 }
@@ -138,27 +266,56 @@ h3 {
         img {
             display: block;
             margin: 0 auto;
-            max-width: 306px;
+            max-width: 100%;
         }
 
         .content {
+            height: 205px;
+            flex-direction: column;
             padding: 16px;
-        }
-
-        .customer {
-            margin-bottom: 48px;
         }
 
         p {
             margin-bottom: 8px;
-    
+
         }
 
         span {
             display: block;
             font-size: $font-size-s;
-    
+
             color: #707070;
+        }
+    }
+
+    @include lg() {
+        ul {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin-top: 24px;
+            max-width: 336px;
+        }
+
+        h3 {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include tablet() {
+        li {}
+    }
+
+    @include xs() {
+        li {
+            max-width: 348px;
+            margin-top: 16px;
+        }
+
+        h3 {
+            margin-bottom: 8px;
         }
     }
 }
@@ -173,7 +330,6 @@ h3 {
 
     p {
         font-size: $font-size-m;
-
         margin-bottom: 24px;
     }
 
@@ -182,7 +338,7 @@ h3 {
 
         p {
             font-size: $font-size-base;
-    
+
             margin-bottom: 8px;
         }
 
@@ -213,7 +369,7 @@ h3 {
 
         ::placeholder {
             font-family: $font-roboto;
-            
+
         }
     }
 
@@ -223,10 +379,6 @@ h3 {
         input[type="checkbox"] {
             width: 16px;
             height: 16px;
-        }
-
-        p {
-    
         }
     }
 
@@ -242,7 +394,7 @@ h3 {
             font-family: $font-noto;
             font-size: $font-size-base;
             font-weight: bold;
-    
+
             color: $white;
             // 清除
             padding: 0;
@@ -254,6 +406,34 @@ h3 {
 
         &:hover {
             filter: brightness(1.1);
+        }
+    }
+
+    @include tablet() {
+        .container {
+            max-width: 576px;
+        }
+
+        p {
+            font-size: $font-size-base;
+        }
+
+        .but {
+            max-width: 336px;
+        }
+    }
+
+    @include xs {
+        .container {
+            max-width: 348px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 4px;
+        }
+
+        .but {
+            max-width: 100%;
         }
     }
 }
