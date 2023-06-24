@@ -56,8 +56,21 @@ body {
   font-family: 'Noto Sans TC', sans-serif, 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .container {
-  max-width: 1296px;
-  margin: 0 auto; }
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 1064px;
+      padding: 0 36px; } }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0 36px; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .container {
+      max-width: 575px;
+      padding: 0 14px; } }
 
 .d-flex {
   display: -webkit-box;
@@ -74,11 +87,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.text-decoration-none {
-  text-decoration: none; }
-
 .p-80 {
   padding: 80px 0; }
+  @media (max-width: 320px), (max-width: 575px) {
+    .p-80 {
+      padding: 40px 0; } }
 
 h3 {
   font-family: "Noto Sans TC", sans-serif;
@@ -87,15 +100,27 @@ h3 {
   color: #650300;
   text-align: center;
   margin-bottom: 48px; }
+  @media (max-width: 576px) {
+    h3 {
+      font-size: 2.25rem; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    h3 {
+      font-size: 1.5rem; } }
 
 .banner {
   display: block;
   max-width: 100%;
-  height: 787px;
+  max-height: 787px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../images/desktop/home-header.png); }
+  @media (max-width: 768px) {
+    .banner {
+      background-image: url(../images/tablet/home-header.png); } }
+  @media (max-width: 576px) {
+    .banner {
+      background-image: url(../images/mobile/home-header.png); } }
   .banner .banner-text {
     padding: 296px 0;
     font-family: "Noto Sans TC", sans-serif;
@@ -115,6 +140,21 @@ h3 {
       .banner .banner-text a:hover {
         -webkit-filter: brightness(1.1);
                 filter: brightness(1.1); }
+  @media (max-width: 576px) {
+    .banner {
+      max-height: 592px; }
+      .banner .banner-text {
+        padding: 144px 0; }
+        .banner .banner-text h2 {
+          font-size: 2.25rem;
+          margin-bottom: 8px; }
+        .banner .banner-text p {
+          font-size: 1.25rem; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .banner .banner-text h2 {
+      font-size: 1.5rem; }
+    .banner .banner-text p {
+      font-size: 1rem; } }
 
 .service {
   font-family: "Noto Sans TC", sans-serif;
@@ -136,9 +176,32 @@ h3 {
       text-align: center; }
     .service li p {
       color: #000000; }
+  @media (max-width: 992px) {
+    .service ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .service li {
+      max-width: 348px;
+      margin: 0 auto; } }
+  @media (max-width: 768px) {
+    .service li {
+      max-width: 336px; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .service h3 {
+      margin-bottom: 0; }
+    .service li {
+      margin-top: 32px; } }
 
-.classic h4,
-.co-branding h4 {
+.classic li {
+  max-width: 416px; }
+  .classic li img {
+    max-width: 100%;
+    margin-bottom: 8px; }
+
+.classic h4 {
   color: #AA0601;
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
@@ -146,11 +209,20 @@ h3 {
   font-style: italic;
   text-align: center; }
 
-.classic li {
-  max-width: 416px; }
-  .classic li img {
-    max-width: 416px;
-    margin-bottom: 8px; }
+@media (max-width: 992px) {
+  .classic ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .classic li {
+    max-width: 336px; }
+  .classic h4 {
+    margin-bottom: 24px; } }
+
+@media (max-width: 320px), (max-width: 575px) {
+  .classic li {
+    max-width: 348px; } }
 
 .co-branding {
   text-align: center;
@@ -158,11 +230,38 @@ h3 {
   .co-branding h3 {
     color: #FFFFFF;
     margin-bottom: 48px; }
+  .co-branding h4 {
+    color: #AA0601;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 8px; }
   .co-branding li {
+    max-width: 648px;
     background-color: #FFFFFF; }
     .co-branding li img {
-      max-width: 648px;
-      margin-bottom: 8px; }
+      max-width: 100%;
+      margin-bottom: 8px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  @media (max-width: 992px) {
+    .co-branding {
+      background: url(../images/tablet/background-tablet.png); }
+      .co-branding ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .co-branding li {
+        max-width: 696px;
+        margin-top: 24px; }
+      .co-branding h3 {
+        margin-bottom: 24px; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .co-branding img {
+      height: 240px; } }
 
 .recommend {
   font-family: "Noto Sans TC", sans-serif; }
@@ -175,17 +274,38 @@ h3 {
     .recommend li img {
       display: block;
       margin: 0 auto;
-      max-width: 306px; }
+      max-width: 100%; }
     .recommend li .content {
+      height: 205px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 16px; }
-    .recommend li .customer {
-      margin-bottom: 48px; }
     .recommend li p {
       margin-bottom: 8px; }
     .recommend li span {
       display: block;
       font-size: 0.875rem;
       color: #707070; }
+  @media (max-width: 992px) {
+    .recommend ul {
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .recommend li {
+      margin-top: 24px;
+      max-width: 336px; }
+    .recommend h3 {
+      margin-bottom: 24px; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .recommend li {
+      max-width: 348px;
+      margin-top: 16px; }
+    .recommend h3 {
+      margin-bottom: 8px; } }
 
 .contact {
   font-family: "Noto Sans TC", sans-serif;
@@ -252,5 +372,19 @@ h3 {
     .contact .but:hover {
       -webkit-filter: brightness(1.1);
               filter: brightness(1.1); }
+  @media (max-width: 768px) {
+    .contact .container {
+      max-width: 576px; }
+    .contact p {
+      font-size: 1rem; }
+    .contact .but {
+      max-width: 336px; } }
+  @media (max-width: 320px), (max-width: 575px) {
+    .contact .container {
+      max-width: 348px; }
+    .contact input[type="checkbox"] {
+      margin-right: 4px; }
+    .contact .but {
+      max-width: 100%; } }
 
 /*# sourceMappingURL=index.css.map */

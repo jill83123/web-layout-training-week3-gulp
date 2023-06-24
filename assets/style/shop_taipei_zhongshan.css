@@ -128,68 +128,102 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+  @media (max-width: 992px) {
+    .shop {
+      padding: 80px 0; } }
+  @media (max-width: 576px) {
+    .shop {
+      padding: 40px 0 64px 0; } }
 
-.shop-info .contact {
-  padding: 16px 28px;
-  border: 1px solid #00000020; }
+.shop-info {
+  height: 414px; }
+  @media (max-width: 992px) {
+    .shop-info {
+      height: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
-.shop-info ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .shop-info ul:after {
-    content: "";
-    width: 32%; }
+.shop-detail {
+  width: 40%; }
+  .shop-detail .contact {
+    padding: 16px 28px;
+    border: 1px solid #00000020; }
+  .shop-detail h3 {
+    font-size: 1.5rem;
+    padding: 8px 24px;
+    border: 1px solid #00000020; }
+  .shop-detail p {
+    font-family: "Noto Sans TC", sans-serif;
+    display: inline-block;
+    font-size: 1.25rem; }
+  .shop-detail span {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-right: 12px; }
+  .shop-detail .icon,
+  .shop-detail .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .shop-detail a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 59px;
+    color: #FFFFFF;
+    background-color: #000000; }
+  .shop-detail li {
+    width: 100%; }
+  .shop-detail img {
+    width: 100%;
+    max-height: 224px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block; }
+  @media (max-width: 992px) {
+    .shop-detail {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%;
+      margin-bottom: 24px; }
+      .shop-detail li {
+        width: 48%; }
+      .shop-detail img {
+        min-height: 224px; }
+      .shop-detail h3 {
+        height: 20%;
+        padding: 4px 24px; }
+      .shop-detail .contact {
+        height: 80%; } }
+  @media (max-width: 576px) {
+    .shop-detail {
+      display: block; }
+      .shop-detail li {
+        width: 100%;
+        margin-bottom: 0; } }
 
-.shop-info li {
-  width: 32%;
-  margin-bottom: 48px; }
+.map {
+  width: 58%; }
+  .map img {
+    max-width: 100%;
+    height: 414px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  @media (max-width: 992px) {
+    .map {
+      width: 100%; }
+      .map img {
+        max-width: 100%;
+        height: auto; } }
 
-.shop-info h3 {
-  font-size: 1.5rem;
-  padding: 8px 24px;
-  border: 1px solid #00000020; }
-
-.shop-info p {
-  font-family: "Noto Sans TC", sans-serif;
-  display: inline-block;
-  font-size: 1.25rem; }
-
-.shop-info span {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-right: 12px; }
-
-.shop-info img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-.shop-info .icon,
-.shop-info .text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.shop-info a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  line-height: 59px;
-  color: #FFFFFF;
-  background-color: #000000; }
-
-@media (max-width: 768px) {
-  .shop-info li {
-    width: 48%; } }
-
-@media (max-width: 576px) {
-  .shop-info ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .shop-info li {
-    width: 98%;
-    margin-bottom: 24px; } }
-
-/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=shop_taipei_zhongshan.css.map */
